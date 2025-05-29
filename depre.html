@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgerunners | Cyberpunk </title>
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/icon/ghost-face.png">
+    <link rel="stylesheet" href="neon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Noto+Serif+Hentalgana:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontello-3f62c99d/css/fontello.css">
+</head>
+<body>
+    <div class="edgerunners-intro">
+        <img src="./imgs/dead.png" alt="Edgerunners" class="intro-bg">
+        
+        <div class="intro-content">
+            <h1 class="edgerunners-logo">
+                <span class="logo-part">E</span>
+                <span class="logo-part">D</span>
+                <span class="logo-part">G</span>
+                <span class="logo-part">E</span>
+                <span class="logo-part">R</span>
+                <span class="logo-part">U</span>
+                <span class="logo-part">N</span>
+                <span class="logo-part">N</span>
+                <span class="logo-part">E</span>
+                <span class="logo-part">R</span>
+                <span class="logo-part">S</span>
+            </h1>
+            <p class="intro-text">Piensas que eres ESPECIAL o tienes algun sueño</p>
+        </div>
+    </div>
+    <audio loop>
+        <source src="./music/let you down.mpeg" type="audio/mpeg">
+    </audio>
+    <div class="media-gallery">
+        <a href="/firs.html" class="nav-item">
+            <img src="./imgs/bueno.png" alt="Personajes" class="nav-thumbnail">
+            <span class="nav-title">Cyberpunk 2077</span>
+        </a>
+        
+        <a href="./depre.html" class="nav-item">
+            <img src="/imgs/lucy.png" alt="Edgerunners" class="nav-thumbnail">
+            <span class="nav-title">Edgerunners</span>
+        </a>
+        
+        <a href="./night_city.html" class="nav-item">
+            <img src="/imgs/mercado.png" alt="Night City" class="nav-thumbnail">
+            <span class="nav-title">Night City</span>
+        </a>
+        
+        <a href="./filoso.html" class="nav-item">
+            <img src="/imgs/edgerunner.png" alt="Filosofía" class="nav-thumbnail">
+            <span class="nav-title">Filosofía Cyberpunk</span>
+        </a>
+    </div>
+    <!-- Sección Personajes -->
+    <section class="edg-characters-section">
+        <h2 class="section-title neon-text">EDGERUNNERS</h2>
+        <div class="edg-characters-grid">
+            <!-- Personaje: David -->
+            <div class="character-card" onclick="toggleTooltip(this)">
+                <div class="edg-character-card">
+                <img src="imgs/david.png" alt="David Martinez" class="edg-character-img">
+                <span class="edg-character-name">David Martinez</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/david.png" alt="David" class="modal-img">
+                        <div class="modal-text">
+                            <h3>DAVID MARTINEZ</h3>
+                            <p>David Martínez soñaba con una vida mejor en Night City, pero el destino le arrebató todo. Tras perder a su madre en un cruel sistema, implantó un Sandevistan de grado militar y entró al mundo de los edgerunners. Junto a Lucy, se unió a una banda de mercenarios, enfrentando traiciones, violencia y la ciberpsicosis. Su obsesión con el poder lo llevó a portar un ciberesqueleto experimental, destruyendo enemigos pero perdiendo su humanidad. En su última batalla contra Adam Smasher, David cayó, pero su sacrificio permitió que Lucy cumpliera su sueño: escapar a la Luna.
+Un héroe, un mártir, una leyenda de Night City.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Personaje: Lucy -->
+            <div class="edg-character-card">
+                <img src="imgs/lucyy.png" alt="Lucy" class="edg-character-img">
+                <span class="edg-character-name">Lucy</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/lucyy.png" alt="Lucy" class="modal-img">
+                        <div class="modal-text">
+                            <h3>LUCY</h3>
+                            <p>Desde su infancia, Lucy fue entrenada para servir a Arasaka como netrunner, pero el precio de ese destino era mortal. Junto a otros niños, se sumergió en la Red en busca de secretos perdidos, solo para verlos caer uno a uno ante las IAs renegadas. Al descubrir que su vida no tenía por qué pertenecer a la corporación, ella y los supervivientes intentaron huir, pero solo Lucy logró escapar con vida.
+Perseguida por su pasado, llegó a Night City y se ocultó entre sus sombras, llevando consigo el peso de una infancia robada y el anhelo de libertad.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personaje: Rebecca -->
+            <div class="edg-character-card">
+                <img src="imgs/rebecca.png" alt="Rebecca" class="edg-character-img">
+                <span class="edg-character-name">Rebecca</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/rebecca.png" alt="Rebecca" class="modal-img">
+                        <div class="modal-text">
+                            <h3>REBECCA</h3>
+                            <p>Rebecca era una edgerunner feroz y temeraria de Night City, siempre en conflicto con su hermano Pilar. En el caos de la vida mercenaria, formó parte del equipo de Maine, enfrentándose a traiciones y peligros con una actitud desafiante. La muerte de Pilar a manos de un ciberpsicópata la llenó de furia, lanzándose al combate sin temor.
+Su destino se selló durante el ataque en Corpo Plaza, donde, en un último instante de desafío, enfrentó a Adam Smasher solo para ser brutalmente aplastada. Su último grito de rebeldía resonó en las calles de Night City, dejando un vacío imposible de llenar.
+Un espíritu indomable que ardió hasta el final.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personaje: Maine -->
+            <div class="edg-character-card">
+                <img src="imgs/main.png" alt="Maine" class="edg-character-img">
+                <span class="edg-character-name">Maine</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/main.png" alt="Maine" class="modal-img">
+                        <div class="modal-text">
+                            <h3>MAINE</h3>
+                            <p>Maine soñaba con triunfar como edgerunner en Night City, pero su búsqueda de poder lo llevó a un camino sin retorno. Exsoldado convertido en mercenario, dirigió un equipo unido por la lealtad y la lucha, acogiendo a David Martínez en sus filas. Sin embargo, el exceso de ciberware comenzó a corroer su mente, llevándolo a episodios de ciberpsicosis.
+En su última batalla, rodeado por NCPD y MAXTAC, Maine perdió toda humanidad, sucumbiendo a la locura y la violencia. En un acto final de furia y desesperación, sacrificó su vida en una explosión mortal, dejando atrás su legado y su mano cibernética, un símbolo del precio que se paga por desafiar los límites del cuerpo humano.
+Una leyenda forjada en fuego y metal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personaje: Dorio -->
+            <div class="edg-character-card">
+                <img src="imgs/dorio.png" alt="Dorio" class="edg-character-img">
+                <span class="edg-character-name">Dorio</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/dorio.png" alt="Dorio" class="modal-img">
+                        <div class="modal-text">
+                            <h3>DORIO</h3>
+                            <p>Dorio era la mano derecha de Maine, una edgerunner veterana con una determinación implacable y una lealtad inquebrantable. Aunque su físico imponente la hacía parecer intimidante, su verdadera fuerza radicaba en su corazón, siempre protegiendo a su equipo, especialmente a Maine, a quien intentó salvar de su propia adicción al ciberware.
+Durante la misión que selló su destino, luchó codo a codo con Maine contra el NCPD y el Trauma Team, pero la tragedia golpeó cuando una bala la alcanzó, arrebatándole la vida en un instante. Su muerte fue el último vínculo con la humanidad de Maine, quien, sumido en la ciberpsicosis, desencadenó una furia imparable.
+Dorio murió como vivió: luchando, protegiendo, y siendo el pilar de su equipo.
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personaje: Pilar -->
+            <div class="edg-character-card">
+                <img src="imgs/pilar.png" alt="Pilar" class="edg-character-img">
+                <span class="edg-character-name">Pilar</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/pilar.png" alt="Pilar" class="modal-img">
+                        <div class="modal-text">
+                            <h3>PILAR</h3>
+                            <p>Pilar era un edgerunner irreverente, un techie con un humor ácido que a menudo lo metía en problemas. Junto a su hermana Rebecca, trabajaba con el equipo de Maine, aportando su ingenio y actitud despreocupada. Su lengua afilada y su naturaleza burlona eran su sello, pero en Night City, jugar con el peligro podía ser mortal.
+Un día, su sentido del humor lo llevó demasiado lejos. Pilar provocó a la persona equivocada: un ciberpsicópata oculto tras una apariencia inofensiva. Antes de que pudiera reaccionar, un proyectil disparado a quemarropa destrozó su cráneo
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Personaje: Kiwi -->
+            <div class="edg-character-card">
+                <img src="imgs/kiwi.png" alt="Kiwi" class="edg-character-img">
+                <span class="edg-character-name">Kiwi</span>
+                <div class="edg-character-modal">
+                    <div class="modal-content">
+                        <img src="imgs/kiwi.png" alt="Kiwi" class="modal-img">
+                        <div class="modal-text">
+                            <h3>KIWI</h3>
+                            <p>Kiwi era una netrunner enigmática, de mente afilada y sarcasmo mordaz. Con una máscara cibernética que ocultaba más que su rostro, entrenó a Lucy en el arte de infiltrarse en la Red, guiándola en un mundo donde la traición era moneda común.
+Pese a su habilidad, Kiwi también jugó su propio juego. Su lealtad no estaba escrita en piedra, y cuando la oportunidad apareció, vendió información a Faraday, desencadenando una cadena de eventos que llevó al equipo de Maine al desastre. Sin embargo, la traición en Night City nunca es unilateral.
+Cuando ya no fue útil, Faraday la eliminó sin titubear, dejando su cuerpo frío en las calles de la ciudad que solía navegar con maestría. Kiwi aprendió demasiado tarde que, en Night City, confiar en el traidor era el mayor riesgo de todos
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sasha -->
+    <section class="edg-sasha-section">
+        <div class="edg-sasha-banner">
+            <img src="imgs/sasha.png" alt="Sasha" class="edg-sasha-img">
+            <div class="edg-sasha-info">
+                <h3 class="neon-text">SASHA</h3>
+                <p>"Let You Down"</p>
+                <div class="edg-sasha-story">
+                    <p>Antigua Netrunner del equipo de Main antes de que llegara Lucy y Kiwi. Sasha es una Netrunner experimentada que mientras se encontraba en el Afterlife fue contratada para robar unos archivos de BioTechnica y ella tenia que infiltrarse en sus oficinas mientras Main desactivaba los sistemas de seguridad. <br>
+                        Todo marchaba bien hasta que Sasha encontro unos archivos confidenciales referentes a un analgesico llamado SECURICINA, ese nombre movio los recuerdos de Sasha ya que es el mismo medicamento que usaba su difunta madre cuando estaba enferma. Al parecer este medicamento tenia como efecto secundario la neurodegeneracion gradual la cual dañaba las celulas cerebrales de la persona que lo usaba. <br>
+                        Sin embargo la compañia nuncalo hizo publica  esta informacion ya que este medicamento generaba grandes ingresos a la compañia y niguna compañia le gusta perder dinero. <br>
+                        Fue en ese momento que Sasha motivada por la ira decidio abandonar el plan de Main y empezar una vendeta personal. Filtraria toda esta informacion del medicamento al canal de noticias N54 mientras activaba una bomba, desafortunadamente para ella fue descubierta por la seguridad de BioTechnica quien enviaron a sus robots de combate contra ella y aun que lucho como una leyenda mientras la informacion era filtrada. TODA LEYENDA DE NIGHT CITY tiene un triste final y ella no seria la excepcion.<br>
+                        Ya que fue dispara atras veces de una ventana de una altura bastante grande mientras su bomba detonaba.<br>
+                        Al final vemos como Sasha ya hace sobre un auto con una sonrisa en su rostro, ella sabe que hizo lo correcto mientras Main la observa impotente mientras el panora se aleja recordandonos que Night City no ganas tu nombre por como vives si no por como MUERES.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="memorial-section">
+    <h2 class="section-title neon-text">EN MEMORIA</h2>
+    <div class="memorial-grid">
+        <!-- David -->
+        <div class="memorial-card" style="border-color: #b1ff2a;">
+            <img src="imgs/depresion.png" alt="David" style="width:100%; border-radius:5px; margin-bottom:15px;">
+            <h3>DAVID MARTINEZ</h3>
+            <p>"Nunca me llevaste a la luna, pero estabas ahi conmigo"</p>
+        </div>
+        
+        <!-- Rebecca -->
+        <div class="memorial-card" style="border-color: #ff08ef;">
+            <img src="imgs/destino.png" alt="Rebecca" style="width:100%; border-radius:5px; margin-bottom:15px;">
+            <h3>REBECCA</h3>
+            <p>"Lamento no haber terminado nuestra conversacion"</p>
+        </div>
+        
+        <!-- Pilar, Dorio, Main -->
+        <div class="memorial-card" style="border-color: #c5a319;">
+            <img src="imgs/familia.png" alt="Maine" style="width:100%; border-radius:5px; margin-bottom:15px;">
+            <h3>PILAR, DORIO, MAIN</h3>
+            <p>"Fueron la unica familia que tuve"</p>
+        </div>
+        
+        <!-- Dorio -->
+        <div class="memorial-card" style="border-color: #a855f7;">
+            <img src="imgs/madre.png" alt="Dorio" style="width:100%; border-radius:5px; margin-bottom:15px;">
+            <h3>Gloria Martinez Madre de David</h3>
+            <p>"Tenias razon. David llego a lo alto de la torre Arasaka"</p>
+        </div>
+        
+        <!-- Kiwi -->
+        <div class="memorial-card" style="border-color: #ec4899;">
+            <img src="imgs/traidora.png" alt="Kiwi" style="width:100%; border-radius:5px; margin-bottom:15px;">
+            <h3>KIWI</h3>
+            <p>"Me enseñaste a no confiar nunca en nadie en Night City"</p>
+        </div>
+    </div>
+</section>
+<section class="spoiler-section">
+    <div class="spoiler-warning" id="spoilerTrigger">
+        ⚠️ ADVERTENCIA: CONTIENE SPOILERS DEL FINAL - CLIC PARA VER
+    </div>
+    <div class="spoiler-content" id="spoilerContent">
+        <img src="imgs/intro2.png" alt="Contenido spoiler" class="spoiler-thumbnail" id="spoilerThumbnail">
+        <video controls class="spoiler-video" id="spoilerVideo">
+            <source src="./video/final.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+<script src="animate.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes | Cyberpunk 2077</title>
+    <link rel="stylesheet" href="neon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Noto+Serif+Hentalgana:wght@200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio loop>
+        <source src="./music/never fade away.mpeg" type="audio/mpeg">
+    </audio>
+    <div class="edgerunners-intro">
+        <img src="./imgs/dicha.png" alt="Edgerunners" class="intro-bg">
+        
+        <div class="intro-content">
+            <h1 class="edgerunners-logo">
+                <span class="logo-part">C</span>
+                <span class="logo-part">Y</span>
+                <span class="logo-part">B</span>
+                <span class="logo-part">E</span>
+                <span class="logo-part">R</span>
+                <span class="logo-part">P</span>
+                <span class="logo-part">U</span>
+                <span class="logo-part">N</span>
+                <span class="logo-part">K</span>
+                <span class="logo-part">2</span>
+                <span class="logo-part">0</span>
+                <span class="logo-part">7</span>
+                <span class="logo-part">7</span>
+            </h1>
+            <p class="intro-text">En un mundo cibernético, la humanidad se convierte en una opción</p>
+        </div>
+    </div>
+    <div class="media-gallery">
+        <a href="/firs.html" class="nav-item">
+            <img src="./imgs/bueno.png" alt="Personajes" class="nav-thumbnail">
+            <span class="nav-title">Cyberpunk 2077</span>
+        </a>
+        
+        <a href="./depre.html" class="nav-item">
+            <img src="/imgs/lucy.png" alt="Edgerunners" class="nav-thumbnail">
+            <span class="nav-title">Edgerunners</span>
+        </a>
+        
+        <a href="./night_city.html" class="nav-item">
+            <img src="/imgs/mercado.png" alt="Night City" class="nav-thumbnail">
+            <span class="nav-title">Night City</span>
+        </a>
+        
+        <a href="./filoso.html" class="nav-item">
+            <img src="/imgs/edgerunner.png" alt="Filosofía" class="nav-thumbnail">
+            <span class="nav-title">Filosofía Cyberpunk</span>
+        </a>
+    </div>
+    <div class="tooltip-overlay" id="tooltipOverlay"></div>
+    <!-- Personajes principales -->
+    <div class="characters-container">
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/V.png" alt="V" class="character-img">
+            <span class="character-name">V</span>
+            <div class="character-tooltip">
+                <img src="/imgs/V.png" alt="V" class="tooltip-img">
+                <h3>V</h3>
+                <p>Protagonista personalizable cuyo destino se entrelaza con Johnny Silverhand después de robar el biochip.</p>
+                <p>Puedes elegir su trasfondo: Nomad, Callejero o Corpo.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/panam.png" alt="Panam" class="character-img">
+            <span class="character-name">PANAM</span>
+            <div class="character-tooltip">
+                <img src="/imgs/panam.png" alt="Panam" class="tooltip-img">
+                <h3>PANAM PALMER</h3>
+                <p>Líder de los Aldecaldos que ayuda a V en su lucha contra Arasaka.</p>
+                <p>Romance disponible para V masculino.</p>
+                <p>Su historia explora temas de lealtad y familia.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/johnny.png" alt="Johnny" class="character-img">
+            <span class="character-name">JOHNNY</span>
+            <div class="character-tooltip">
+                <img src="/imgs/johnny.png" alt="Johnny" class="tooltip-img">
+                <h3>JOHNNY SILVERHAND</h3>
+                <p>El legendario rockerboy cuyo engrama habita en la mente de V.</p>
+                <p>Antiguo terrorista anti-corporaciones interpretado por Keanu Reeves.</p>
+                <p>Su relación con V evoluciona a lo largo de la historia.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/judy.png" alt="Judy" class="character-img">
+            <span class="character-name">JUDY</span>
+            <div class="character-tooltip">
+                <img src="/imgs/judy.png" alt="Judy" class="tooltip-img">
+                <h3>JUDY ALVAREZ</h3>
+                <p>Brillante técnico de braindance y miembro de los Mox.</p>
+                <p>Especialista en edición de experiencias cerebrales.</p>
+                <p>Romance disponible para V femenino.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/rogue.png" alt="Rogue" class="character-img">
+            <span class="character-name">ROGUE</span>
+            <div class="character-tooltip">
+                <img src="/imgs/rogue.png" alt="Rogue" class="tooltip-img">
+                <h3>ROGUE</h3>
+                <p>La Reina de los Afterlife y antigua compañera de Johnny Silverhand.</p>
+                <p>Brinda trabajos a mercenarios y tiene conexiones con todos los grupos importantes de Night City.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/jackie.png" alt="Jackie" class="character-img">
+            <span class="character-name">JACKIE</span>
+            <div class="character-tooltip">
+                <img src="/imgs/jackie.png" alt="Jackie" class="tooltip-img">
+                <h3>JACKIE WELLES</h3>
+                <p>Mejor amigo de V y compañero mercenario.</p>
+                <p>Muere durante el fatídico robo al Konpeki Plaza.</p>
+                <p>Representa el costo de la vida mercenaria en Night City.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/hanako.png" alt="Hanako" class="character-img">
+            <span class="character-name">HANAKO</span>
+            <div class="character-tooltip">
+                <img src="/imgs/hanako.png" alt="Hanako" class="tooltip-img">
+                <h3>HANAKO ARASAKA</h3>
+                <p>Hija de Saburo Arasaka. Figura clave en el conflicto corporativo que domina Night City.</p>
+                <p>Representa el poder y la influencia de las megacorporaciones en el mundo Cyberpunk.</p>
+            </div>
+        </div>
+        <div class="character-card" onclick="toggleTooltip(this)">
+            <img src="/imgs/takemura.png" alt="Takemura" class="character-img">
+            <span class="character-name">TAKEMURA</span>
+            <div class="character-tooltip">
+                <img src="/imgs/takemura.png" alt="Takemura" class="tooltip-img">
+                <h3>GORO TAKEMURA</h3>
+                <p>Ex guardaespaldas de Saburo Arasaka y antiguo agente de inteligencia.</p>
+                <p>Ayuda a V a investigar el asesinato de Saburo, aunque sus lealtades son complejas.</p>
+                <p>Representa el conflicto entre el honor y la lealtad corporativa.</p>
+            </div>
+        </div>
+    </div>
+    <div class="phantom-section">
+        <h2 class="phantom-title">PHANTOM LIBERTY</h2>
+        
+        <div class="phantom-characters">
+            <div class="phantom-card" onclick="togglePhantomTooltip(this)">
+                <img src="/imgs/so mi.png" alt="Songbird" class="phantom-img">
+                <span class="phantom-name">SONGBIRD</span>
+                <div class="phantom-tooltip">
+                    <img src="/imgs/so mi.png" alt="Songbird" class="phantom-tooltip-img">
+                    <h3>SONGBIRD (SO MI)</h3>
+                    <p>Misteriosa netrunner con conexiones a la FIA y el gobierno de NUSA.</p>
+                    <p>Su conocimiento de la Blackwall la hace un activo invaluable y peligroso.</p>
+                    <p>Ofrece a V una posible cura a su problema con el Relic.</p>
+                </div>
+            </div>
+            
+            <div class="phantom-card" onclick="togglePhantomTooltip(this)">
+                <img src="/imgs/reed.png" alt="Reed" class="phantom-img">
+                <span class="phantom-name">REED</span>
+                <div class="phantom-tooltip">
+                    <img src="/imgs/reed.png" alt="Reed" class="phantom-tooltip-img">
+                    <h3>SOLOMON REED</h3>
+                    <p>Agente de campo de la FIA con un pasado complicado.</p>
+                    <p>Interpretado por el actor Idris Elba.</p>
+                    <p>Opera en la zona de Dogtown, donde la ley es flexible y el peligro constante.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="story-section">
+        <h2 class="story-title">LA HISTORIA DE CYBERPUNK 2077</h2>
+        <div class="story-content">
+            <p>Cyberpunk 2077 nos sumerge en Night City, una megalópolis obsesionada con el poder, la gloria y la modificación corporal. Como V, un mercenario en busca del Santo Grial que permita la inmortalidad, te verás envuelto en una peligrosa trama de espionaje corporativo, traición y la búsqueda desesperada por sobrevivir.</p>
+            
+            <p>Todo comienza con el robo de un biochip experimental llamado "Relic", creado por Arasaka para almacenar la conciencia de una persona. Sin saberlo, V y su amigo Jackie Welles roban un prototipo que contiene el engrama de Johnny Silverhand, el legendario rockerboy y terrorista anti-corporaciones que murió hace más de 50 años.</p>
+            
+            <p>Cuando el plan sale mal y Jackie muere, V se ve obligado a insertar el Relic en su propia cabeza para salvarlo, iniciando un proceso irreversible donde la conciencia de Johnny Silverhand comienza a reemplazar la suya. Con solo semanas de vida, V emprende una carrera contra el tiempo para encontrar una cura, mientras Johnny intenta convencerlo de que aproveche sus últimos días para atacar a Arasaka y convertirse en una leyenda de Night City.</p>
+            
+            <p>A lo largo de la historia, V se aliará con diversos personajes como Panam Palmer de los Aldecaldos, Judy Alvarez de los Mox, o el misterioso Takemura, antiguo guardaespaldas de Saburo Arasaka, cada uno con sus propias agendas y visiones sobre cómo V debería enfrentar su destino.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Finales -->
+<div class="endings-section">
+    <h2 class="endings-title">FINALES DE CYBERPUNK 2077</h2>
+    <div class="endings-container">
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/El Diablo.png" alt="El Diablo" class="ending-img">
+                <span class="ending-name">El Diablo</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/El Diablo.png" alt="El Diablo" class="ending-tooltip-img">
+                    <h3>EL DIABLO</h3>
+                    <p>V decide confiar en Arasaka y se somete a sus procedimientos experimentales. El resultado es incierto y potencialmente desgarrador, dejando a V a merced de la megacorporación.</p>
+                    <p>Este final explora los peligros de confiar en las corporaciones y el costo de la supervivencia a cualquier precio. Johnny Silverhand estaría horrorizado por esta elección.</p>
+                </div>
+            </div>
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/La Estrella.png" alt="La Estrella" class="ending-img">
+                <span class="ending-name">La Estrella</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/La Estrella.png" alt="La Estrella" class="ending-tooltip-img">
+                    <h3>LA ESTRELLA</h3>
+                    <p>V abandona Night City con los Aldecaldos, buscando una nueva vida y posiblemente una cura entre los nómadas. Este final ofrece esperanza y un sentido de libertad.</p>
+                    <p>Representa la posibilidad de escapar del ciclo de violencia de Night City y encontrar una nueva familia en los Aldecaldos. Panam juega un papel crucial en este desenlace.</p>
+                </div>
+            </div>
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/Templanza.png" alt="Templanza" class="ending-img">
+                <span class="ending-name">Templanza</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/Templanza.png" alt="Templanza" class="ending-tooltip-img">
+                    <h3>TEMPLANZA</h3>
+                    <p>Johnny Silverhand toma posesión permanente del cuerpo de V, mientras el engrama de V desaparece en el cyberspace. Johnny debe vivir con las consecuencias de esta decisión.</p>
+                    <p>Este final filosófico explora temas de identidad y sacrificio. Johnny obtiene una segunda oportunidad, pero a un costo enorme.</p>
+                </div>
+            </div>
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/El Sol.png" alt="El Sol" class="ending-img">
+                <span class="ending-name">El Sol</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/El Sol.png" alt="El Sol" class="ending-tooltip-img">
+                    <h3>EL SOL</h3>
+                    <p>V se embarca en una misión suicida contra Arasaka y sobrevive, convirtiéndose en una leyenda de Night City y tomando el control del Afterlife.</p>
+                    <p>Este final cumple la promesa de "una vida corta pero gloriosa". V alcanza la cima del mundo criminal, pero su tiempo sigue siendo limitado.</p>
+                </div>
+            </div>
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/Suicidio.png" alt="Suicidio" class="ending-img">
+                <span class="ending-name">Suicidio</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/Suicidio.png" alt="Suicidio" class="ending-tooltip-img">
+                    <h3>SUICIDIO</h3>
+                    <p>V, abrumado por la situación, decide terminar con su vida. Este final trágico muestra el lado más oscuro de Night City y sus efectos en quienes no pueden soportar su peso.</p>
+                    <p>Es un recordatorio sombrío de los costos psicológicos del mundo cyberpunk. Los personajes reaccionan con dolor a esta decisión.</p>
+                </div>
+            </div>
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/Secreto.png" alt="Secreto" class="ending-img">
+                <span class="ending-name">Secreto</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/Secreto.png" alt="Secreto" class="ending-tooltip-img">
+                    <h3>SECRETO</h3>
+                    <p>En la expansión Phantom Liberty, V puede aceptar un trato con la FIA que promete una cura, pero con condiciones y consecuencias inesperadas.</p>
+                    <p>Este final introduce nuevos dilemas morales y muestra que incluso las soluciones aparentemente perfectas tienen su precio en el universo Cyberpunk.</p>
+                </div>
+            </div>
+            <div class="ending-card" onclick="toggleEndingTooltip(this)">
+                <img src="/imgs/La Torre.png" alt="La Torre" class="ending-img">
+                <span class="ending-name">La Torre</span>
+                <div class="ending-tooltip">
+                    <img src="/imgs/La Torre.png" alt="La Torre" class="ending-tooltip-img">
+                    <h3>LA TORRE (PHANTOM LIBERTY)</h3>
+                    <p>Otro final exclusivo de Phantom Liberty donde V sobrevive pero pierde mucho en el proceso, incluyendo sus habilidades cyberware y conexiones en Night City.</p>
+                    <p>Explora el tema de que la supervivencia no siempre es una victoria, y que a veces el precio es perder lo que nos hace quienes somos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleEndingTooltip(card) {
+            const overlay = document.getElementById('tooltipOverlay');
+            const allTooltips = document.querySelectorAll('.ending-tooltip');
+            const tooltip = card.querySelector('.ending-tooltip');
+            
+            allTooltips.forEach(t => {
+                if (t !== tooltip) {
+                    t.classList.remove('active');
+                }
+            });
+            
+            const isActive = tooltip.classList.contains('active');
+            
+            if (isActive) {
+                overlay.classList.remove('active');
+                tooltip.classList.remove('active');
+            } else {
+                overlay.classList.add('active');
+                tooltip.classList.add('active');
+            }
+        }
+        document.getElementById('tooltipOverlay').addEventListener('click', function() {
+            document.querySelectorAll('.character-tooltip, .phantom-tooltip, .ending-tooltip').forEach(tooltip => {
+                tooltip.classList.remove('active');
+            });
+            this.classList.remove('active');
+        });
+    </script>
+    <script src="animate.js"></script>
+</body>
+</html>
